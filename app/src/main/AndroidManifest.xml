@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="design.swira.aennyapp">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <receiver
+            android:name=".ui.aenny.recivers.MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <activity android:name=".ui.aenny.chat.ChatActivity"  android:label=""
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.aenny.ongonigtrip.EndTripActivity"  android:label=""
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.aenny.ongonigtrip.StartTripActivity"  android:label=""
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.aenny.ongonigtrip.DriverComingActivity"  android:label=""
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.aenny.testmap.TestMapsActivity3"
+            android:label="@string/title_activity_test_maps3" />
+        <activity
+            android:name=".ui.aenny.clientfavourites.AddClientFavouriteDialogActivity2"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".ui.aenny.testmap.TestMapsActivity2" />
+        <activity
+            android:name=".ui.aenny.notifications.NotificationsListActivity"
+            android:parentActivityName=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.aenny.changepasswordmobile.ValidationActivity" />
+        <activity
+            android:name=".ui.aenny.changepasswordmobile.ForgotPassword2Activity"
+            android:parentActivityName=".ui.aenny.changepasswordmobile.ForgotPassword1Activity" />
+        <activity android:name=".ui.aenny.changepasswordmobile.ForgotPassword1Activity" />
+        <activity android:name=".ui.aenny.terms.TermssActivity" />
+        <activity android:name=".ui.aenny.ongonigtrip.UpdateRequestTripActivity" />
+        <activity
+            android:name=".ui.aenny.ongonigtrip.UpdateSecondStepMapActivity"
+            android:parentActivityName=".ui.aenny.ongonigtrip.UpdateRouteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.ongonigtrip.UpdateRouteActivity"
+            android:parentActivityName=".ui.aenny.trips.TripsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.ongonigtrip.UpdateSchduleTripActivity"
+            android:parentActivityName=".ui.aenny.ongonigtrip.UpdateRequestTripActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.trips.TripsListActivity"
+            android:parentActivityName=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.clientfavourites.UpdateClientFavouriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.paymentsmethods.UpdatePaymentMethodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.customdialog.MyCustomDialogActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".ui.aenny.clientfavourites.AddClientFavouriteDialogActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".ui.aenny.ongonigtrip.SchduleTripActivity"
+            android:parentActivityName=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.clientfavourites.ClientFavouriteListActivity"
+            android:parentActivityName=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.clientfavourites.AddClientFavouritesActivity"
+            android:parentActivityName=".ui.aenny.clientfavourites.ClientFavouriteListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.ongonigtrip.RequestTripActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".ui.aenny.ongonigtrip.SecondStepMapActivity"
+            android:parentActivityName=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.ongonigtrip.RouteActivity"
+            android:parentActivityName=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.testmap.TestMapsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".ui.aenny.paymentsmethods.PaymentsListActivity"
+            android:parentActivityName=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.settingscreen.MainSettingsActivity"
+            android:parentActivityName=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.paymentsmethods.AddPaymentsMethodActivity"
+            android:parentActivityName=".ui.aenny.paymentsmethods.PaymentsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".ui.aenny.longtrip.AddLongTripActivity"
+            android:parentActivityName=".ui.aenny.mainpage.MainClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.regsister.UpdateProfileActivity"
+            android:parentActivityName=".ui.aenny.AennyMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.changepasswordmobile.ChangeMobileActivity"
+            android:parentActivityName=".ui.aenny.AennyMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.changepasswordmobile.ChangePasswordActivity"
+            android:parentActivityName=".ui.aenny.AennyMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aenny.regsister.CompleteRegsisterActivity"
+            android:parentActivityName=".ui.aenny.regsister.ClientRegsisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.aenny.AennyMainActivity" />
+        <activity
+            android:name=".ui.aenny.regsister.ClientRegsisterActivity"
+            android:parentActivityName=".ui.aenny.signin.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.aenny.signin.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.aenny.intro.IntroOneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.aenny.splash.Splash2Activity" />
+        <activity
+            android:name=".ui.aenny.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NDrawerActivity"
+            android:label="@string/title_activity_ndrawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.aenny.cities.CityListActivity" />
+        <activity android:name=".ui.test3.MDataActivity" />
+        <activity android:name=".ui.test2.DataActivity" />
+        <activity android:name=".ui.test.DataActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

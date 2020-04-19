@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="12"
+        tools:context=".ui.aenny.paymentsmethods.UpdatePaymentMethodActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Edit Payment"
+            android:textStyle="bold"
+            android:textSize="19.3sp"
+            android:textColor="#35af6a"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"></TextView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+
+            >
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:prompt="@string/cardmethod"
+                android:paddingLeft="35dp"
+                android:paddingRight="15dp"
+                android:textDirection="ltr"
+                android:background="@drawable/ic_rectangle_111"
+
+                ></Spinner>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/ic_rounded_rectangle_333"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                ></ImageView>
+
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow2"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="45dp"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="visible"></ImageView>
+
+
+        </FrameLayout>
+
+
+
+        <EditText
+            android:id="@+id/holdername"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="normal"
+            android:textSize="19.3dp"
+            android:textColor="#808080"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/ic_rectangle_1555"
+            android:hint="Card holder name"
+            android:textColorHint="#808080"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="15dp"></EditText>
+
+
+
+
+        <EditText
+            android:id="@+id/cardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textStyle="normal"
+            android:textSize="19.3dp"
+            android:textColor="#808080"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_rectangle_1555"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+
+            android:hint="Card number"
+            android:textColorHint="#808080"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="15dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/expiredate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textStyle="normal"
+            android:textSize="19.3dp"
+            android:textColor="#808080"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_rectangle_1555"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+
+            android:hint="Expiration date mm yy"
+            android:textColorHint="#808080"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="15dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textStyle="normal"
+            android:textSize="19.3dp"
+            android:textColor="#808080"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_rectangle_1555"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+
+            android:hint="CVV"
+            android:textColorHint="#808080"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="15dp"></EditText>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></LinearLayout>
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="19.5sp"
+            android:textColor="#fff"
+            android:background="@mipmap/rounded_rectangle_2"
+            android:layout_gravity="center"
+            android:layout_marginRight="75dp"
+            android:layout_marginLeft="75dp"
+            android:text="Update"></Button>
+
+
+    </LinearLayout>
+</layout>

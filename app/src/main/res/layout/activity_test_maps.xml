@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    >
+
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/map"
+android:name="com.google.android.gms.maps.SupportMapFragment"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+    android:layout_weight="8"
+tools:context=".ui.aenny.testmap.TestMapsActivity" ></fragment>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:textStyle="bold"
+        android:textSize="19.5sp"
+        android:textColor="#fff"
+        android:background="@mipmap/rounded_rectangle_2"
+        android:layout_gravity="center"
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="75dp"
+        android:text="Ok"
+        ></Button>
+
+
+
+
+</LinearLayout>

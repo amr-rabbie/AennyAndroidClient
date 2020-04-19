@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ui.aenny.regsister.CompleteRegsisterActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textStyle="bold"
+                android:textSize="22.8sp"
+                android:textColor="#35af6a"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"></TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_woman"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:layout_gravity="center"></ImageView>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textStyle="normal"
+                android:textSize="15.4sp"
+                android:textColor="#808080"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:background="@mipmap/rounded_rectangle_21"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:drawableLeft="@drawable/ic_person"
+                android:hint=" Name*"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="15dp"
+                ></EditText>
+
+
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textStyle="normal"
+                android:textSize="15.4sp"
+                android:textColor="#808080"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:background="@mipmap/rounded_rectangle_21"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:drawableLeft="@drawable/ic_phonr"
+                android:hint=" Mobile*"
+                android:textColorHint="#808080"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone"
+                android:layout_marginBottom="15dp" ></EditText>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+
+                >
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:textStyle="normal"
+                    android:textSize="15.4sp"
+                    android:textColor="#808080"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/rounded_rectangle_21"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:drawableLeft="@drawable/ic_password"
+
+                    android:hint=" Password*"
+                    android:inputType="textPassword"
+                    android:textColorHint="#808080"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"></EditText>
+
+                <ImageView
+                    android:id="@+id/seenimg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_unseen"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:visibility="visible"
+                    ></ImageView>
+
+
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                >
+
+                <EditText
+                    android:id="@+id/passwordagain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="normal"
+                    android:textSize="15.4sp"
+                    android:textColor="#808080"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/rounded_rectangle_21"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:drawableLeft="@drawable/ic_password"
+
+                    android:hint=" Password again*"
+                    android:inputType="textPassword"
+                    android:textColorHint="#808080"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"></EditText>
+
+                <ImageView
+                    android:id="@+id/seenimgagain"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_unseen"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:visibility="visible"
+                    ></ImageView>
+
+
+
+            </FrameLayout>
+
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15.4sp"
+                android:textColor="#808080"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:background="@mipmap/rounded_rectangle_21"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:drawableLeft="@drawable/ic_message"
+                android:hint=" Email"
+                android:textColorHint="#808080"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="15dp"></EditText>
+
+            <TextView
+                android:id="@+id/disabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15.4sp"
+                android:textColor="#808080"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:background="@mipmap/rounded_rectangle_21"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:drawableLeft="@drawable/ic_disabled"
+                android:drawableRight="@drawable/ic_arrow2"
+                android:hint=" I am the disabled"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="15dp"></TextView>
+
+            <EditText
+                android:id="@+id/emergencymobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15.4sp"
+                android:textColor="#808080"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:background="@mipmap/rounded_rectangle_21"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:drawableLeft="@drawable/ic_emergence_1"
+                android:hint=" Emergency mobile*"
+                android:textColorHint="#808080"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="15dp"></EditText>
+
+            <TextView
+                android:id="@+id/disabilitytypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textStyle="normal"
+                android:textSize="15.4sp"
+                android:textColor="#808080"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:background="@mipmap/rounded_rectangle_21"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:drawableLeft="@drawable/ic_brile"
+                android:drawableRight="@drawable/ic_arrow2"
+                android:hint=" Disability types"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="15dp"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/disabilityrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:visibility="gone"
+                ></androidx.recyclerview.widget.RecyclerView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+
+                >
+
+                <Spinner
+                    android:id="@+id/livingcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/rounded_rectangle_21"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:prompt="@string/livingcity"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="15dp"
+                    android:textDirection="ltr"
+                    ></Spinner>
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:visibility="visible"
+                    ></ImageView>
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_city"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:visibility="visible"
+                    ></ImageView>
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+
+                >
+
+                <Spinner
+                    android:id="@+id/livingarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="35dp"
+                    android:background="@mipmap/rounded_rectangle_21"
+                    android:layout_marginRight="35dp"
+                    android:prompt="@string/livingarea"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="15dp"
+                    android:textDirection="ltr"
+                    ></Spinner>
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:visibility="visible"
+                    ></ImageView>
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_area"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:visibility="visible"
+                    ></ImageView>
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+
+                >
+
+                <Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/rounded_rectangle_21"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:prompt="@string/gender"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="15dp"
+                    android:textDirection="ltr"
+                    ></Spinner>
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:visibility="visible"
+                    ></ImageView>
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_e_male"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:visibility="visible"
+                    ></ImageView>
+
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15.4sp"
+                android:textColor="#808080"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:background="@mipmap/rounded_rectangle_21"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:drawableLeft="@drawable/ic_birthday"
+                android:hint="Birthday"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="20dp"></TextView>
+
+            <Button
+                android:id="@+id/changemob"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textStyle="normal"
+                android:textSize="14.5sp"
+                android:textColor="#fff"
+                android:background="@mipmap/rounded_rectangle_2"
+                android:layout_gravity="center"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:text="Change mobile number"
+                android:layout_marginBottom="20dp"
+            ></Button>
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/changepass"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textStyle="normal"
+                android:textSize="14.5sp"
+                android:textColor="#fff"
+                android:background="@mipmap/rounded_rectangle_2"
+                android:layout_gravity="center"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:text="Change password"
+                android:layout_marginBottom="30dp"
+                ></Button>
+
+
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textStyle="bold"
+                android:textSize="19.5sp"
+                android:textColor="#fff"
+                android:background="@mipmap/rounded_rectangle_2"
+                android:layout_gravity="center"
+                android:layout_marginRight="75dp"
+                android:layout_marginLeft="75dp"
+                android:text="Update"
+                android:layout_marginBottom="30dp"
+                ></Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

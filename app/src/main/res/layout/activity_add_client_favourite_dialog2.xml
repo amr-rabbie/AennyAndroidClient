@@ -1,0 +1,616 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:orientation="vertical"
+        android:weightSum="8"
+        tools:context=".ui.aenny.mainpage.MainClientActivity">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_weight="0"
+            android:layout_height="0dp"
+
+            tools:context=".ui.aenny.clientfavourites.AddClientFavouritesActivity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:background="@drawable/ic_square">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Add to favourites"
+                android:textStyle="bold"
+                android:textSize="22.8sp"
+                android:textColor="#35af6a"
+
+                android:layout_marginBottom="15dp"
+                android:gravity="center"></TextView>
+
+            <EditText
+                android:id="@+id/locname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15.4sp"
+                android:textColor="#808080"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:background="@mipmap/rounded_rectangle_21"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+
+                android:hint="  Location name*"
+                android:textColorHint="#808080"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"></EditText>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/ic_rounded_rectangle_333"
+                android:tint="#3a3a39"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"></ImageView>
+
+            <TextView
+                android:text="Location icon"
+                android:textColor="#3a3a39"
+                android:textSize="7.1sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="25dp"
+                ></TextView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_loc_sel"
+                        android:id="@+id/location"
+                        android:layout_margin="10dp"
+                        ></ImageView>
+
+                    <!--<FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/location"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_ellipse_1"
+
+                            ></ImageView>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_shape_77"
+                            android:layout_margin="15dp"></ImageView>
+
+
+                    </FrameLayout>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Location"
+                        android:textColor="#3a3a39"
+                        android:textStyle="normal"
+                        android:textSize="11.5dp"
+                        android:gravity="center"></TextView>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/hospital"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_hospital"
+                        android:layout_margin="10dp"
+                        ></ImageView>
+
+                    <!--<FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/hospital"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_ellipse_1"
+
+                            ></ImageView>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_shape_55"
+                            android:layout_margin="15dp"></ImageView>
+
+
+                    </FrameLayout>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Hospital"
+                        android:textColor="#3a3a39"
+                        android:textStyle="normal"
+                        android:textSize="11.5dp"
+                        android:gravity="center"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_school"
+                        android:id="@+id/school"
+                        android:layout_margin="10dp"
+                        ></ImageView>
+
+                    <!--<FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/school"
+                       >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_ellipse_1"
+
+                            ></ImageView>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_shape_66"
+                            android:layout_margin="15dp"></ImageView>
+
+
+                    </FrameLayout>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="School"
+                        android:textColor="#3a3a39"
+                        android:textStyle="normal"
+                        android:textSize="11.5dp"
+                        android:gravity="center"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_home"
+                        android:layout_margin="10dp"
+                        ></ImageView>
+
+                    <!--<FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/home"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_ellipse_1"
+                            ></ImageView>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_shape_4"
+                            android:layout_margin="15dp"></ImageView>
+
+
+                    </FrameLayout>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Home"
+                        android:textColor="#3a3a39"
+                        android:textStyle="normal"
+                        android:textSize="11.5dp"
+                        android:gravity="center"></TextView>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_home"
+                        android:id="@+id/home2"
+                        android:layout_margin="3dp"
+                        ></ImageView>
+
+                    <!--<FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/home2"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_ellipse_1"
+
+                            ></ImageView>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_shape_4"
+                            android:layout_margin="15dp"></ImageView>
+
+
+                    </FrameLayout>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Home"
+                        android:textColor="#3a3a39"
+                        android:textStyle="normal"
+                        android:textSize="11.5dp"
+                        android:gravity="center"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_hospital"
+                        android:id="@+id/hospital2"
+                        android:layout_margin="3dp"
+                        ></ImageView>
+
+                    <!--<FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/hospital2">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_ellipse_1"
+
+                            ></ImageView>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_shape_55"
+                            android:layout_margin="15dp"></ImageView>
+
+
+                    </FrameLayout>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Hospital"
+                        android:textColor="#3a3a39"
+                        android:textStyle="normal"
+                        android:textSize="11.5dp"
+                        android:gravity="center"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_school"
+                        android:id="@+id/school2"
+                        android:layout_margin="3dp"
+                        ></ImageView>
+
+                    <!--<FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/school2">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_ellipse_1"
+
+                            ></ImageView>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_shape_66"
+                            android:layout_margin="15dp"></ImageView>
+
+
+                    </FrameLayout>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="School"
+                        android:textColor="#3a3a39"
+                        android:textStyle="normal"
+                        android:textSize="11.5dp"
+                        android:gravity="center"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_location"
+                        android:id="@+id/location2"
+                        android:layout_margin="3dp"
+                        ></ImageView>
+
+                    <!--<FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/location2">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_ellipse_1"
+
+                            ></ImageView>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_shape_77"
+                            android:layout_margin="15dp"></ImageView>
+
+
+                    </FrameLayout>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Location"
+                        android:textColor="#3a3a39"
+                        android:textStyle="normal"
+                        android:textSize="11.5dp"
+                        android:gravity="center"></TextView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="52dp"
+
+                android:textStyle="bold"
+                android:textSize="19.5sp"
+                android:textColor="#fff"
+                android:background="@mipmap/rounded_rectangle_2"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+
+                android:text="Ok"></Button>
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="52dp"
+
+                    android:textStyle="bold"
+                    android:textSize="19.5sp"
+                    android:textColor="#fff"
+                    android:background="@drawable/ic_cancel_button"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Cancel"></Button>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"></LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

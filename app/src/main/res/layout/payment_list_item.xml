@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView android:id="@+id/cview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardCornerRadius="25dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="1dp"
+    app:cardElevation="1dp"
+    android:layout_margin="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6.5"
+        android:background="#d1f1df"
+
+        >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mastercard"
+
+            android:layout_gravity="center"
+            ></ImageView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_rectangle_5"
+            android:backgroundTint="#d1f1df"
+
+            >
+
+
+
+            <TextView
+                android:id="@+id/paymentmethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MasterCard"
+                android:textColor="#35af6a"
+                android:textSize="11.5sp"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:padding="6dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Card Holder"
+                android:textColor="#7f7f7f"
+                android:textSize="9.5sp"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/cardnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Card Number"
+                android:textColor="#7f7f7f"
+                android:textSize="9.5sp"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/expiredate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expire Date"
+                android:textColor="#7f7f7f"
+                android:textSize="9.5sp"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                ></TextView>
+
+
+
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Edit"
+                    android:textColor="#353939"
+                    android:textSize="15.5sp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:background="#0c66f0"
+                    android:padding="8dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Delete"
+                    android:textColor="#353939"
+                    android:textSize="15.5sp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:background="#ea0000"
+                    android:padding="8dp"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+

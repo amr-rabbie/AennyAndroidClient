@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1026002079216",
+    "firebase_url": "https://aenny-71b33.firebaseio.com",
+    "project_id": "aenny-71b33",
+    "storage_bucket": "aenny-71b33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026002079216:android:cc8d840b9cfb8aebf22135",
+        "android_client_info": {
+          "package_name": "design.swira.aennyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026002079216-olu42jupajurfh0p0u0tftac90ker2u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4Ct-tFob0yJtdDWfAGhOCffa7ExUwQsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026002079216-olu42jupajurfh0p0u0tftac90ker2u8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

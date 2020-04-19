@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/myprofile"
+        android:icon="@drawable/ic_shape_777"
+        android:title="Edit my profile"
+         />
+
+        <item
+            android:id="@+id/mytrips"
+            android:icon="@drawable/ic_mytrips"
+            android:title="My trips"
+             />
+        <item
+            android:id="@+id/favourites"
+            android:icon="@drawable/ic_favourites"
+            android:title="Favorites" />
+        <item
+            android:id="@+id/payments"
+            android:icon="@drawable/ic_payments"
+            android:title="Payment" />
+        <item
+            android:id="@+id/addlongtrip"
+            android:icon="@drawable/ic_days"
+            android:title="Several days requests" />
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help"
+            android:title="Help and support" />
+
+
+
+
+
+
+
+</menu>

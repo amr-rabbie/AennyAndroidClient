@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:weightSum="15"
+        android:background="#fff"
+        tools:context=".ui.aenny.ongonigtrip.UpdateRequestTripActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#35af6a"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+
+                ></ProgressBar>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                android:text="Finding a nearest vehicle"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#3a3a39"
+                android:textSize="15.3sp"
+                android:textStyle="normal"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                android:text="Aenee tips"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#35af6a"
+                android:textColorHint="#3a3a39"
+                android:textSize="23sp"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+
+But also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+like Aldus PageMaker including versions of Lorem Ipsum."
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#3a3a39"
+                android:textColorHint="#3a3a39"
+                android:textSize="15.4sp"
+                android:textStyle="normal"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></LinearLayout>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textStyle="bold"
+                android:textSize="19.5sp"
+                android:textColor="#fff"
+                android:background="@mipmap/rounded_rectangle_2"
+                android:layout_gravity="center"
+                android:layout_marginRight="75dp"
+                android:layout_marginLeft="75dp"
+                android:text="Cancel"></Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

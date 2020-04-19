@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+  </data>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:weightSum="16"
+      android:background="@drawable/ic_into_user_android_01"
+      tools:context=".ui.aenny.intro.IntroOneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="New features"
+        android:textStyle="bold"
+        android:textSize="22.8sp"
+        android:textColor="#35af6a"
+        android:gravity="center"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+
+        android:layout_gravity="center_vertical"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"></LinearLayout>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:text="Scheduled trips"
+        android:textStyle="bold"
+        android:textSize="19.5sp"
+        android:textColor="#35af6a"
+        android:gravity="center"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus erat turpis, cursus non consectetur sit amet, consectetur sit amet lectus. "
+        android:textStyle="normal"
+        android:textSize="15.6sp"
+        android:textColor="#3a3a39"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:gravity="center"></TextView>-->
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:visibility="gone">
+
+      <com.google.android.material.tabs.TabLayout
+          android:id="@+id/tabs"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:tabIndicatorColor="#35af6a"
+          app:tabSelectedTextColor="#3a3a39"
+          app:tabTextColor="#3a3a39"
+          app:tabIndicatorHeight="3dp"
+          app:tabGravity="fill"
+          app:tabMode="scrollable"
+android:visibility="gone"
+          >
+
+      </com.google.android.material.tabs.TabLayout>
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/introrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_gravity="center"
+
+      ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+android:visibility="gone"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+      android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:visibility="gone"
+      >
+
+      <ImageView
+          android:id="@+id/img1"
+          android:layout_width="0dp"
+          android:layout_height="3.5dp"
+          android:layout_weight="1"
+          android:src="@mipmap/rounded_rectangle_3"
+          android:layout_gravity="center"
+
+          ></ImageView>
+
+      <ImageView
+          android:id="@+id/img2"
+          android:layout_width="0dp"
+          android:layout_height="3.5dp"
+          android:layout_weight="1"
+          android:src="@mipmap/rounded_rectangle_3"
+          android:layout_gravity="center"
+ android:visibility="invisible"
+          ></ImageView>
+
+      <ImageView
+          android:id="@+id/img3"
+          android:layout_width="0dp"
+          android:layout_height="3.5dp"
+          android:layout_weight="1"
+          android:src="@mipmap/rounded_rectangle_3"
+          android:layout_gravity="center"
+          android:visibility="invisible"
+          ></ImageView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"></LinearLayout>
+
+
+    <Button
+        android:id="@+id/getstart"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Get Started"
+        android:textStyle="bold"
+        android:textSize="19.5sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="@mipmap/rounded_rectangle_2"
+        android:layout_gravity="center"
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="75dp"
+        ></Button>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+
+  </LinearLayout>
+</layout>

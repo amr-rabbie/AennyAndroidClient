@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView android:id="@+id/cview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+
+    app:cardCornerRadius="25dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="1dp"
+    app:cardElevation="1dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="#d1f1df"
+        >
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_home"
+            android:id="@+id/img"
+            android:layout_gravity="center"
+            ></ImageView>
+
+
+            <!--<FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/school2">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_ellipse_1"
+
+                    ></ImageView>
+
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_shape_66"
+                    android:layout_margin="15dp"></ImageView>
+
+
+            </FrameLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_rectangle_5"
+        android:weightSum="2"
+        android:backgroundTint="#d1f1df"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4"
+
+            >
+
+        <TextView
+            android:id="@+id/locname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Location name"
+            android:textColor="#353939"
+            android:textSize="15.5sp"
+            android:textStyle="normal"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            android:padding="8dp"
+            android:layout_marginTop="7dp"
+            ></TextView>
+
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Edit"
+                android:textColor="#353939"
+                android:textSize="15.5sp"
+                android:textStyle="normal"
+                android:gravity="center"
+
+                android:layout_marginLeft="5dp"
+                android:background="#0c66f0"
+                android:padding="8dp"
+
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+        <TextView
+            android:id="@+id/locaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Lorem Ipsum is simply dummy text of the printing"
+            android:textColor="#353939"
+            android:textSize="9.5sp"
+            android:textStyle="normal"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            android:padding="6dp"
+            ></TextView>
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:textColor="#353939"
+                android:textSize="15.5sp"
+                android:textStyle="normal"
+                android:gravity="center"
+
+                android:layout_marginLeft="5dp"
+                android:background="#ea0000"
+                android:padding="8dp"
+                ></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
